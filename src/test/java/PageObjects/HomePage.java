@@ -31,10 +31,13 @@ public class HomePage {
     //Locator for Sauce Labs Onesie
     By slOnesie = By.xpath("//*[@id=\"item_2_title_link\"]/div");
 
+    //Locator for HomePageDropdownMenu
+    By homePageDropDownMenu = By.xpath("//*[@id=\"react-burger-menu-btn\"]");
 
+    //Locator for LogOutOption
+    By logoutOption = By.xpath("//*[@id=\"logout_sidebar_link\"]");
 
-
-
+    //Method to check the headerLabel
     public By gethLabel() {
         return hLabel;
     }
@@ -56,17 +59,30 @@ public class HomePage {
 
     //Method to click on Sort Dropdown button
     public void clickOnSortDropdownButton() {
-        driver.findElement(sortDropdownButton).click(); }
+        driver.findElement(sortDropdownButton).click();
+    }
 
     //Method to click on Sort Option
     public void clickOnSortOption() {
         driver.findElement(sortOption).click();
     }
 
+    //Method to click on HomePageDropdownMenu
+    public void clickOnHomePageDropdownMenu() {
+        driver.findElement(homePageDropDownMenu).click();
+    }
+
+    //Method to click on LogoutOption
+    public void clickOnLogoutOption() {
+        driver.findElement(logoutOption).click();
+    }
+
+    //Method to check on Sauce Labs Onesie
     public By getSlOnesie() {
         return slOnesie;
     }
-
 }
+
+
 
 

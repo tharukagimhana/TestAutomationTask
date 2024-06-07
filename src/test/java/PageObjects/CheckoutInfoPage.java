@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class CheckoutInfoPage {
 
-
     WebDriver driver;
 
     public CheckoutInfoPage(WebDriver driver) {
@@ -23,7 +22,6 @@ public class CheckoutInfoPage {
 
     //Locator for continue button
     By continueButton = By.xpath("//*[@id=\"continue\"]");
-
 
     //Method to enter Firstname
     public void enterFirstName(String user) {
